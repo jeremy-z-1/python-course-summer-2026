@@ -35,7 +35,7 @@ def make_integer():
     Example: return 10
     """
     # >>> YOUR CODE HERE
-    pass
+    return 10
 
 
 def make_float():
@@ -44,7 +44,7 @@ def make_float():
     Example: return 3.5
     """
     # >>> YOUR CODE HERE
-    pass
+    return 3.5
 
 
 def add_numbers(a, b):
@@ -53,7 +53,7 @@ def add_numbers(a, b):
     Hint: use the + sign.
     """
     # >>> YOUR CODE HERE
-    pass
+    return a + b
 
 
 def subtract_numbers(a, b):
@@ -61,7 +61,7 @@ def subtract_numbers(a, b):
     Return a - b.
     """
     # >>> YOUR CODE HERE
-    pass
+    return a - b
 
 
 def multiply_numbers(a, b):
@@ -70,7 +70,7 @@ def multiply_numbers(a, b):
     Hint: * means multiply in Python.
     """
     # >>> YOUR CODE HERE
-    pass
+    return a * b
 
 
 def divide_numbers(a, b):
@@ -79,7 +79,7 @@ def divide_numbers(a, b):
     Hint: / usually gives a float in Python (example: 5 / 2 is 2.5).
     """
     # >>> YOUR CODE HERE
-    pass
+    return a / b
 
 
 # ------------------------------------------------------------
