@@ -6,10 +6,10 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 
 | Folder / file | What it is |
 |---------------|------------|
-| `week01/` | **Ready now** — 7 daily assignments |
-| `week02/` | Placeholder (coming later) |
-| `week03/` | Placeholder (coming later) |
-| `week04/` | Placeholder (coming later) |
+| `week01/` | Week 1 — Fundamentals 1 (7 daily assignments) |
+| `week02/` | Week 2 — Fundamentals 2 (7 daily assignments) |
+| `week03/` | Week 3 — Organization / files + Git (7 daily assignments) |
+| `week04/` | Week 4 — OOP (7 daily assignments) |
 | `tests/run_acceptance.py` | Checks your answers automatically |
 | `Jeremy Python Course.docx` | Original course outline |
 
@@ -17,7 +17,7 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 
 ## Course overview (from the course doc)
 
-### Week 1: Fundamentals 1 *(assignments ready)*
+### Week 1: Fundamentals 1
 1. Integers vs doubles vs floats  
 2. Strings  
 3. If-else  
@@ -26,7 +26,7 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 6. Review (Part 1)  
 7. Review (Part 2)
 
-### Week 2: Fundamentals 2 *(not built yet)*
+### Week 2: Fundamentals 2
 1. 2-D lists  
 2. Dicts  
 3. Nested loops  
@@ -35,7 +35,7 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 6. Functions 2 (parameters and arguments)  
 7. Review
 
-### Week 3: Organization *(not built yet)*
+### Week 3: Organization
 1. Files and folders (`.py` vs `.ipynb`) & csv/txt  
 2. Reading from a file  
 3. Pull  
@@ -44,7 +44,7 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 6. Version control (branches)  
 7. Review
 
-### Week 4: OOP *(not built yet)*
+### Week 4: OOP
 1. Libraries  
 2. Creating a class and object  
 3. Changing class fields (static vs dynamic)  
@@ -55,23 +55,25 @@ A beginner Python course for summer. Work **one day at a time**. Your older brot
 
 ---
 
-## How to do Week 1
+## How to do a week
 
-1. Open `week01/README.md`.
-2. Each day, open that day's file (example: `week01/day01_numbers.py`).
+1. Open that week's folder README (example: `week02/README.md`).
+2. Each day, open that day's file (example: `week02/day01_2d_lists.py`).
 3. Read the comments. Find `# >>> YOUR CODE HERE` and write your code there.
 4. Save the file.
-5. From the project root, run the tests:
+5. From the project root, run the tests for that week:
 
 ```bash
-python3 tests/run_acceptance.py 1
+python3 tests/run_acceptance.py 2
 ```
 
 Only one day:
 
 ```bash
-python3 tests/run_acceptance.py 1 --day 1
+python3 tests/run_acceptance.py 2 --day 1
 ```
+
+Swap `2` for `1`, `3`, or `4` depending on the week.
 
 6. When tests pass (or even if you're stuck and want help), **upload to GitHub** so your brother can check your work.
 
@@ -109,20 +111,23 @@ Use your GitHub username. For the password, GitHub often wants a **Personal Acce
 
 1. Go to https://github.com/jeremy-z-1/python-course-summer-2026  
 2. Refresh the page  
-3. You should see your new folders (`week01`, `tests`, etc.)
+3. You should see your folders (`week01`–`week04`, `tests`, etc.)
 
 ---
 
 ## How your brother can check your work
 
 1. Open the repo on GitHub (or `git pull` on his computer).  
-2. Run:
+2. Run the week you want to check:
 
 ```bash
 python3 tests/run_acceptance.py 1
+python3 tests/run_acceptance.py 2
+python3 tests/run_acceptance.py 3
+python3 tests/run_acceptance.py 4
 ```
 
-3. Look at your code in the `week01/` day files and leave comments on GitHub if he wants.
+3. Look at the day files and leave comments on GitHub if he wants.
 
 ### Share the repo with your brother
 
@@ -141,9 +146,7 @@ Someone with access to the repo (you or a parent) should:
 ## Quick start today
 
 ```bash
-# See Week 1 instructions
-# Then open: week01/day01_numbers.py
-
+# See the week's README, then open that day's .py file
 python3 tests/run_acceptance.py 1 --day 1
 ```
 
