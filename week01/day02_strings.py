@@ -33,7 +33,7 @@ def make_greeting():
     (Include the comma and the exclamation mark.)
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Hello, Python!"
 
 
 def greet(name):
@@ -43,7 +43,7 @@ def greet(name):
     Hint: return "Hello, " + name + "!"
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Hello, " + name + "!"
 
 
 def full_name(first, last):
@@ -52,7 +52,7 @@ def full_name(first, last):
     Example: full_name("Ada", "Lovelace") → "Ada Lovelace"
     """
     # >>> YOUR CODE HERE
-    pass
+    return first + " " + last
 
 
 def shout(text):
@@ -62,7 +62,7 @@ def shout(text):
     Example: shout("hi") → "HI"
     """
     # >>> YOUR CODE HERE
-    pass
+    return text.upper()
 
 
 def whisper(text):
@@ -72,7 +72,7 @@ def whisper(text):
     Example: whisper("HI") → "hi"
     """
     # >>> YOUR CODE HERE
-    pass
+    return text.lower()
 
 
 def count_characters(text):
@@ -82,7 +82,7 @@ def count_characters(text):
     Example: count_characters("cat") → 3
     """
     # >>> YOUR CODE HERE
-    pass
+    return len(text)
 
 
 if __name__ == "__main__":
