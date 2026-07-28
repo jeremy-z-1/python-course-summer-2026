@@ -40,7 +40,10 @@ def is_even(number):
              is_even(5) → False
     """
     # >>> YOUR CODE HERE
-    pass
+    if number % 2 == 0:
+        return True
+    else:
+        return False
 
 
 def is_positive(number):
@@ -51,8 +54,10 @@ def is_positive(number):
              is_positive(0) → False
     """
     # >>> YOUR CODE HERE
-    pass
-
+    if number > 0:
+        return True
+    else:
+        return False
 
 def bigger(a, b):
     """
@@ -61,7 +66,12 @@ def bigger(a, b):
     Example: bigger(3, 10) → 10
     """
     # >>> YOUR CODE HERE
-    pass
+    if a > b:
+        return a
+    elif b > a:
+        return b
+    else:
+        return a
 
 
 def can_ride(height_inches):
@@ -73,8 +83,10 @@ def can_ride(height_inches):
              can_ride(40) → "No"
     """
     # >>> YOUR CODE HERE
-    pass
-
+    if height_inches >= 48:
+        return "Yes"
+    else:
+        return "No"
 
 def letter_grade(score):
     """
@@ -92,8 +104,14 @@ def letter_grade(score):
       letter_grade(50) → "Keep practicing"
     """
     # >>> YOUR CODE HERE
-    pass
-
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    else:
+        return "Keep practicing"
 
 if __name__ == "__main__":
     print("Day 3 playground")
