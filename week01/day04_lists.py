@@ -34,7 +34,7 @@ def make_number_list():
     Example: return [1, 2, 3, 4, 5]
     """
     # >>> YOUR CODE HERE
-    pass
+    return [1, 2, 3, 4, 5]
 
 
 def first_item(items):
@@ -44,7 +44,7 @@ def first_item(items):
     Example: first_item(["a", "b", "c"]) → "a"
     """
     # >>> YOUR CODE HERE
-    pass
+    return items[0]
 
 
 def last_item(items):
@@ -54,7 +54,7 @@ def last_item(items):
     Example: last_item(["a", "b", "c"]) → "c"
     """
     # >>> YOUR CODE HERE
-    pass
+    return items[-1]
 
 
 def list_length(items):
@@ -63,7 +63,7 @@ def list_length(items):
     Hint: len(items)
     """
     # >>> YOUR CODE HERE
-    pass
+    return len(items)
 
 
 def add_favorite(items, new_item):
@@ -77,7 +77,7 @@ def add_favorite(items, new_item):
     Example: add_favorite(["pizza"], "tacos") → ["pizza", "tacos"]
     """
     # >>> YOUR CODE HERE
-    pass
+    return items + [new_item]
 
 
 def second_item(items):
@@ -87,7 +87,7 @@ def second_item(items):
     Example: second_item(["red", "green", "blue"]) → "green"
     """
     # >>> YOUR CODE HERE
-    pass
+    return items[1]
 
 
 if __name__ == "__main__":
