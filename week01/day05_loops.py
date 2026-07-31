@@ -40,7 +40,7 @@ def count_to(n):
     Example: count_to(3) → [1, 2, 3]
     """
     # >>> YOUR CODE HERE
-    pass
+    return list(range(1, n + 1))
 
 
 def sum_list(numbers):
@@ -56,7 +56,10 @@ def sum_list(numbers):
       return total
     """
     # >>> YOUR CODE HERE
-    pass
+    total = 0
+    for number in numbers:
+        total = total + number
+    return total
 
 
 def repeat_word(word, times):
@@ -71,7 +74,10 @@ def repeat_word(word, times):
       return result
     """
     # >>> YOUR CODE HERE
-    pass
+    result = []
+    for i in range(times):
+        result.append(word)
+    return result
 
 
 def count_evens(numbers):
@@ -81,7 +87,11 @@ def count_evens(numbers):
     Example: count_evens([1, 2, 3, 4]) → 2
     """
     # >>> YOUR CODE HERE
-    pass
+    count = 0
+    for i in range(len(numbers)):
+        if numbers[i] % 2 == 0:
+            count += 1
+    return count
 
 
 def find_max(numbers):
@@ -90,12 +100,13 @@ def find_max(numbers):
     Assume the list is not empty.
     Hint: keep a variable called biggest, update it in a loop.
     Example: find_max([3, 10, 2]) → 10
-
-    You can use max(numbers) if you want — both are fine for now.
     """
     # >>> YOUR CODE HERE
-    pass
-
+    biggest = numbers[0]
+    for i in range(len(numbers)):
+        if numbers[i] > biggest:
+            biggest = numbers[i]
+    return biggest
 
 if __name__ == "__main__":
     print("Day 5 playground")
