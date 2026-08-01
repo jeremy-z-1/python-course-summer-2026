@@ -27,7 +27,7 @@ def double_number(n):
     Example: double_number(7) → 14
     """
     # >>> YOUR CODE HERE
-    pass
+    return n * 2
 
 
 def describe_number(n):
@@ -38,7 +38,12 @@ def describe_number(n):
       - if n == 0: return "zero"
     """
     # >>> YOUR CODE HERE
-    pass
+    if n > 0:
+        return "positive"
+    elif n < 0:
+        return "negative"
+    else:
+        return "zero"
 
 
 def make_label(name, age):
@@ -50,7 +55,7 @@ def make_label(name, age):
       return "Name: " + name + ", Age: " + str(age)
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Name: " + name + ", Age: " + str(age)
 
 
 def password_ok(password):
@@ -61,7 +66,10 @@ def password_ok(password):
              password_ok("hi") → False
     """
     # >>> YOUR CODE HERE
-    pass
+    if len(password) >= 6:
+        return True
+    else:
+        return False
 
 
 def choose_snack(hungry):
@@ -71,7 +79,10 @@ def choose_snack(hungry):
     If hungry is False, return "Maybe later"
     """
     # >>> YOUR CODE HERE
-    pass
+    if hungry == True:
+        return "Get a snack"
+    else:
+        return "Maybe later"
 
 
 if __name__ == "__main__":
