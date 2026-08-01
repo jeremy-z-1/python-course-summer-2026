@@ -26,7 +26,7 @@ def shopping_total(prices):
     Example: shopping_total([2.5, 1.25, 3.0]) → 6.75
     """
     # >>> YOUR CODE HERE
-    pass
+    return sum(prices)
 
 
 def only_long_words(words):
@@ -46,7 +46,11 @@ def only_long_words(words):
       return result
     """
     # >>> YOUR CODE HERE
-    pass
+    result = []
+    for word in words:
+        if len(word) > 3:
+            result.append(word)
+    return result
 
 
 def countdown(n):
@@ -58,7 +62,7 @@ def countdown(n):
     or build it with a loop.
     """
     # >>> YOUR CODE HERE
-    pass
+    return list(range(n, 0, -1))
 
 
 def average(numbers):
@@ -69,7 +73,7 @@ def average(numbers):
     Example: average([2, 4, 6]) → 4.0
     """
     # >>> YOUR CODE HERE
-    pass
+    return sum(numbers) / len(numbers)
 
 
 def fizz_label(n):
@@ -88,7 +92,14 @@ def fizz_label(n):
       fizz_label(7)  → "7"
     """
     # >>> YOUR CODE HERE
-    pass
+    if n % 3 == 0 and n % 5 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return str(n)
 
 
 if __name__ == "__main__":
