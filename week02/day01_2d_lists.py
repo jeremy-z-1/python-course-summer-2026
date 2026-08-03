@@ -35,7 +35,8 @@ def make_tiny_grid():
        [3, 4]]
     """
     # >>> YOUR CODE HERE
-    pass
+    return [[1, 2],
+       [3, 4]]
 
 
 def get_cell(grid, row, col):
@@ -45,7 +46,7 @@ def get_cell(grid, row, col):
       get_cell([[1, 2], [3, 4]], 1, 0) → 3
     """
     # >>> YOUR CODE HERE
-    pass
+    return grid[row][col]
 
 
 def row_count(grid):
@@ -55,7 +56,7 @@ def row_count(grid):
     Example: row_count([[1, 2], [3, 4], [5, 6]]) → 3
     """
     # >>> YOUR CODE HERE
-    pass
+    return len(grid)
 
 
 def column_count(grid):
@@ -66,7 +67,7 @@ def column_count(grid):
     Example: column_count([[1, 2, 3], [4, 5, 6]]) → 3
     """
     # >>> YOUR CODE HERE
-    pass
+    return len(grid[0])
 
 
 def first_row(grid):
@@ -75,7 +76,7 @@ def first_row(grid):
     Example: first_row([[10, 20], [30, 40]]) → [10, 20]
     """
     # >>> YOUR CODE HERE
-    pass
+    return grid[0]
 
 
 def sum_row(grid, row):
@@ -85,7 +86,7 @@ def sum_row(grid, row):
     Example: sum_row([[1, 2, 3], [4, 5, 6]], 0) → 6
     """
     # >>> YOUR CODE HERE
-    pass
+    return sum(grid[row])
 
 
 if __name__ == "__main__":
