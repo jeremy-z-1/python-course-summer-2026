@@ -34,7 +34,7 @@ def make_person():
     Example: {"name": "Jeremy", "age": 13}
     """
     # >>> YOUR CODE HERE
-    pass
+    return {"name": "Jeremy", "age": 13}
 
 
 def get_value(data, key):
@@ -43,7 +43,7 @@ def get_value(data, key):
     Example: get_value({"color": "blue"}, "color") → "blue"
     """
     # >>> YOUR CODE HERE
-    pass
+    return data[key]
 
 
 def set_score(scores, name, points):
@@ -55,7 +55,8 @@ def set_score(scores, name, points):
       set_score({}, "Ada", 100) → {"Ada": 100}
     """
     # >>> YOUR CODE HERE
-    pass
+    scores[name] = points
+    return scores
 
 
 def has_key(data, key):
@@ -66,7 +67,7 @@ def has_key(data, key):
              has_key({"a": 1}, "b") → False
     """
     # >>> YOUR CODE HERE
-    pass
+    return key in data
 
 
 def favorite_color(person):
@@ -76,7 +77,7 @@ def favorite_color(person):
     Example: favorite_color({"name": "Sam", "color": "green"}) → "green"
     """
     # >>> YOUR CODE HERE
-    pass
+    return person["color"]
 
 
 def word_lengths(words):
@@ -94,7 +95,10 @@ def word_lengths(words):
       return result
     """
     # >>> YOUR CODE HERE
-    pass
+    result = {}
+    for word in words:
+      result[word] = len(word)
+    return result
 
 
 if __name__ == "__main__":
