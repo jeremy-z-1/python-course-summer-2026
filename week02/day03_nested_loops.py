@@ -32,7 +32,11 @@ def count_cells(grid):
     Example: count_cells([[1, 2], [3, 4], [5, 6]]) → 6
     """
     # >>> YOUR CODE HERE
-    pass
+    total = 0
+    for row in grid:
+        for cell in row:
+            total += 1
+    return total
 
 
 def sum_all(grid):
@@ -47,7 +51,11 @@ def sum_all(grid):
     Example: sum_all([[1, 2], [3, 4]]) → 10
     """
     # >>> YOUR CODE HERE
-    pass
+    total = 0
+    for row in grid:
+        for value in row:
+            total = total + value
+    return total
 
 
 def make_grid(rows, cols, fill):
@@ -67,7 +75,13 @@ def make_grid(rows, cols, fill):
       return grid
     """
     # >>> YOUR CODE HERE
-    pass
+    grid = []
+    for r in range(rows):
+        row = []
+        for c in range(cols):
+            row.append(fill)
+        grid.append(row)
+    return grid
 
 
 def flatten(grid):
@@ -76,8 +90,11 @@ def flatten(grid):
     Example: flatten([[1, 2], [3, 4]]) → [1, 2, 3, 4]
     """
     # >>> YOUR CODE HERE
-    pass
-
+    list = []
+    for row in grid:
+        for value in row:
+            list.append(value)
+    return list
 
 def multiplication_row(n, times):
     """
@@ -87,7 +104,11 @@ def multiplication_row(n, times):
     Hint: build a list with a loop over range(1, times + 1).
     """
     # >>> YOUR CODE HERE
-    pass
+    list = []
+    for i in range(1, times + 1):
+        list.append(n * i)
+    return list
+
 
 
 if __name__ == "__main__":
