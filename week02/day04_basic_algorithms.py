@@ -32,7 +32,10 @@ def contains(items, target):
              contains([1, 2, 3], 9) → False
     """
     # >>> YOUR CODE HERE
-    pass
+    for number in items:
+        if number == target:
+            return True
+    return False
 
 
 def count_occurrences(items, target):
@@ -41,7 +44,11 @@ def count_occurrences(items, target):
     Example: count_occurrences([1, 2, 1, 1], 1) → 3
     """
     # >>> YOUR CODE HERE
-    pass
+    count = 0
+    for number in items:
+        if number == target:
+            count += 1
+    return count
 
 
 def find_index(items, target):
@@ -60,7 +67,10 @@ def find_index(items, target):
       return -1
     """
     # >>> YOUR CODE HERE
-    pass
+    for i in range(len(items)):
+        if items[i] == target:
+            return i
+    return -1
 
 
 def reverse_list(items):
@@ -72,7 +82,10 @@ def reverse_list(items):
     Hint: return items[::-1]  or build a new list in a loop.
     """
     # >>> YOUR CODE HERE
-    pass
+    reversed_list = []
+    for i in range(len(items) - 1, -1, -1):
+        reversed_list.append(items[i])
+    return reversed_list
 
 
 def is_sorted_ascending(numbers):
@@ -87,7 +100,10 @@ def is_sorted_ascending(numbers):
     Hint: compare each number to the next one.
     """
     # >>> YOUR CODE HERE
-    pass
+    for i in range(len(numbers) - 1):
+        if numbers[i] > numbers[i + 1]:
+            return False
+    return True
 
 
 if __name__ == "__main__":
