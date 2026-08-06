@@ -35,7 +35,7 @@ def say_hello():
     Return the exact string: Hello!
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Hello!"
 
 
 def add_two(a, b):
@@ -44,7 +44,7 @@ def add_two(a, b):
     Example: add_two(2, 5) → 7
     """
     # >>> YOUR CODE HERE
-    pass
+    return a + b
 
 
 def square(n):
@@ -53,7 +53,7 @@ def square(n):
     Example: square(4) → 16
     """
     # >>> YOUR CODE HERE
-    pass
+    return n * n
 
 
 def describe_today():
@@ -61,7 +61,7 @@ def describe_today():
     Return the exact string: Learning functions
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Learning functions"
 
 
 def main():
@@ -74,7 +74,7 @@ def main():
       return "Ready: " + describe_today()
     """
     # >>> YOUR CODE HERE
-    pass
+    return "Ready: " + describe_today()
 
 
 if __name__ == "__main__":
