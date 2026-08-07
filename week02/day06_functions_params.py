@@ -37,7 +37,7 @@ def greet(name, title="Friend"):
       greet("Ada", "Dr.") → "Dr. Ada"
     """
     # >>> YOUR CODE HERE
-    pass
+    return title + " " + name
 
 
 def power(base, exponent=2):
@@ -49,7 +49,7 @@ def power(base, exponent=2):
       power(2, 3) → 8
     """
     # >>> YOUR CODE HERE
-    pass
+    return base ** exponent
 
 
 def full_label(first, last, age):
@@ -59,7 +59,7 @@ def full_label(first, last, age):
     Hint: use str(age)
     """
     # >>> YOUR CODE HERE
-    pass
+    return first + " " + last + " (" + str(age) + ")" 
 
 
 def apply_discount(price, percent):
@@ -72,7 +72,7 @@ def apply_discount(price, percent):
     Hint: price * (1 - percent / 100)
     """
     # >>> YOUR CODE HERE
-    pass
+    return price * (1 - percent / 100)
 
 
 def average_of_three(a, b, c):
@@ -81,7 +81,7 @@ def average_of_three(a, b, c):
     Example: average_of_three(2, 4, 6) → 4.0
     """
     # >>> YOUR CODE HERE
-    pass
+    return sum([a, b, c])/3
 
 
 if __name__ == "__main__":
