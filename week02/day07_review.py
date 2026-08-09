@@ -26,7 +26,11 @@ def grid_trace(grid):
     Example: grid_trace([[1, 2], [3, 4]]) → [1, 2, 3, 4]
     """
     # >>> YOUR CODE HERE
-    pass
+    list = []
+    for row in grid:
+        for value in row:
+            list.append(value)
+    return list
 
 
 def tallest(people):
@@ -38,7 +42,13 @@ def tallest(people):
     Example: tallest({"Ada": 64, "Grace": 66}) → "Grace"
     """
     # >>> YOUR CODE HERE
-    pass
+    tallest = None
+    tallest_height = 0
+    for name, height in people.items():
+        if height > tallest_height:
+            tallest_height = height
+            tallest = name
+    return tallest
 
 
 def count_above(grid, limit):
@@ -47,7 +57,12 @@ def count_above(grid, limit):
     Example: count_above([[1, 5], [3, 9]], 4) → 2
     """
     # >>> YOUR CODE HERE
-    pass
+    count = 0
+    for row in grid:
+        for value in row:
+            if value > limit:
+                count += 1
+    return count
 
 
 def first_even(numbers):
@@ -58,7 +73,10 @@ def first_even(numbers):
              first_even([1, 3, 5]) → None
     """
     # >>> YOUR CODE HERE
-    pass
+    for number in numbers:
+        if number % 2 == 0:
+            return number
+    return None
 
 
 def build_report(name, score):
@@ -67,7 +85,7 @@ def build_report(name, score):
     Example: build_report("Jeremy", 95) → {"name": "Jeremy", "score": 95}
     """
     # >>> YOUR CODE HERE
-    pass
+    return {"name": name, "score": score}
 
 
 if __name__ == "__main__":
