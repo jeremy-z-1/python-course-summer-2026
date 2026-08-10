@@ -42,7 +42,9 @@ def get_extension(filename):
           return filename.split(".")[-1]
     """
     # >>> YOUR CODE HERE
-    pass
+    if "." not in filename:
+        return ""
+    return filename.split(".")[-1]
 
 
 def is_python_file(filename):
@@ -52,7 +54,7 @@ def is_python_file(filename):
              is_python_file("notes.txt") → False
     """
     # >>> YOUR CODE HERE
-    pass
+    return filename.endswith(".py")
 
 
 def is_notebook_file(filename):
@@ -61,7 +63,7 @@ def is_notebook_file(filename):
     Example: is_notebook_file("lab.ipynb") → True
     """
     # >>> YOUR CODE HERE
-    pass
+    return filename.endswith(".ipynb")
 
 
 def file_kind(filename):
@@ -81,7 +83,16 @@ def file_kind(filename):
       file_kind("photo.png") → "other"
     """
     # >>> YOUR CODE HERE
-    pass
+    if filename.endswith(".py"):
+        return "python"
+    elif filename.endswith(".ipynb"):
+        return "notebook"
+    elif filename.endswith(".txt"):
+        return "text"
+    elif filename.endswith(".csv"):
+        return "csv"
+    else:
+        return "other"
 
 
 def is_data_file(filename):
@@ -92,7 +103,7 @@ def is_data_file(filename):
              is_data_file("c.py") → False
     """
     # >>> YOUR CODE HERE
-    pass
+    return filename.endswith(".txt") or filename.endswith(".csv")
 
 
 if __name__ == "__main__":
