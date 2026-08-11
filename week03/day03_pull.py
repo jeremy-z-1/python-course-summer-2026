@@ -30,7 +30,7 @@ def pull_command():
     Exact answer: git pull
     """
     # >>> YOUR CODE HERE
-    pass
+    return "git pull"
 
 
 def pull_purpose():
@@ -39,7 +39,7 @@ def pull_purpose():
     Return exactly: download updates from GitHub
     """
     # >>> YOUR CODE HERE
-    pass
+    return "download updates from GitHub"
 
 
 def when_to_pull():
@@ -48,7 +48,7 @@ def when_to_pull():
     Return exactly: before you start coding
     """
     # >>> YOUR CODE HERE
-    pass
+    return "before you start coding"
 
 
 def pull_needs_internet():
@@ -57,7 +57,7 @@ def pull_needs_internet():
     Return True.
     """
     # >>> YOUR CODE HERE
-    pass
+    return True
 
 
 def safer_order():
@@ -67,7 +67,7 @@ def safer_order():
     (not "code then pull")
     """
     # >>> YOUR CODE HERE
-    pass
+    return "pull then code"
 
 
 if __name__ == "__main__":
