@@ -36,7 +36,8 @@ def read_whole_file(path):
           return f.read()
     """
     # >>> YOUR CODE HERE
-    pass
+    with open(path) as f:
+        return f.read()
 
 
 def count_lines(path):
@@ -47,7 +48,9 @@ def count_lines(path):
     this matches the number of newline-separated lines.
     """
     # >>> YOUR CODE HERE
-    pass
+    with open(path) as f:
+        lines = f.readlines()
+        return len(lines)
 
 
 def read_first_line(path):
@@ -58,7 +61,8 @@ def read_first_line(path):
           return f.readline().rstrip("\n")
     """
     # >>> YOUR CODE HERE
-    pass
+    with open(path) as f:
+        return f.readline().rstrip("\n")
 
 
 def list_lines(path):
@@ -69,7 +73,8 @@ def list_lines(path):
           return [line.rstrip("\n") for line in f]
     """
     # >>> YOUR CODE HERE
-    pass
+    with open(path) as f:
+        return [line.rstrip("\n") for line in f]
 
 
 def csv_names(path):
@@ -92,7 +97,12 @@ def csv_names(path):
       return names
     """
     # >>> YOUR CODE HERE
-    pass
+    lines = list_lines(path)
+    names = []
+    for line in lines[1:]:
+        parts = line.split(",")
+        names.append(parts[0])
+    return names
 
 
 if __name__ == "__main__":
