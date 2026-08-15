@@ -32,7 +32,7 @@ def push_command():
     Return exactly: git push
     """
     # >>> YOUR CODE HERE
-    pass
+    return "git push"
 
 
 def push_purpose():
@@ -40,7 +40,7 @@ def push_purpose():
     Return exactly: upload commits to GitHub
     """
     # >>> YOUR CODE HERE
-    pass
+    return "upload commits to GitHub"
 
 
 def habit_three_steps(message):
@@ -57,7 +57,7 @@ def habit_three_steps(message):
         ]
     """
     # >>> YOUR CODE HERE
-    pass
+    return ['git add .', 'git commit -m "' + message + '"', 'git push']
 
 
 def push_before_or_after_commit():
@@ -66,7 +66,7 @@ def push_before_or_after_commit():
     Return exactly: after
     """
     # >>> YOUR CODE HERE
-    pass
+    return "after"
 
 
 def brother_can_see_after_push():
@@ -75,7 +75,7 @@ def brother_can_see_after_push():
     Return True.
     """
     # >>> YOUR CODE HERE
-    pass
+    return True
 
 
 if __name__ == "__main__":
