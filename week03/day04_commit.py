@@ -29,7 +29,7 @@ def stage_all_command():
     Exact answer: git add .
     """
     # >>> YOUR CODE HERE
-    pass
+    return "git add ."
 
 
 def commit_command(message):
@@ -42,7 +42,7 @@ def commit_command(message):
     Hint: return 'git commit -m "' + message + '"'
     """
     # >>> YOUR CODE HERE
-    pass
+    return 'git commit -m "' + message + '"'
 
 
 def commit_purpose():
@@ -50,7 +50,7 @@ def commit_purpose():
     Return exactly: save a snapshot
     """
     # >>> YOUR CODE HERE
-    pass
+    return "save a snapshot"
 
 
 def is_good_message(message):
@@ -61,7 +61,10 @@ def is_good_message(message):
     Return True/False.
     """
     # >>> YOUR CODE HERE
-    pass
+    if len(message) >= 3:
+      return True
+    else:
+      return False
 
 
 def two_step_commit(message):
@@ -75,7 +78,7 @@ def two_step_commit(message):
       → ['git add .', 'git commit -m "Hi"']
     """
     # >>> YOUR CODE HERE
-    pass
+    return ['git add .', 'git commit -m "' + message + '"']
 
 
 if __name__ == "__main__":
